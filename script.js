@@ -1,3 +1,7 @@
+let n1;
+let n2;
+let op;
+
 function add (a, b) {
     return a + b;
 }

@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(48, 48, 47);
+    color: white;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px black solid;
+    border-radius: 10%;
+    background-color: rgb(33, 33, 30);
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column4 > div{
+    background-color: goldenrod;
+    color: white;
+}
+
+.column1 > div,
+.column2 > div,
+.column3 > div,
+.column4 > div {
+    min-width: 50px;
+    min-height: 50px;
+    outline: 1px black solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clear {
+    background-color: gray;
+    outline: none !important;
+}
+
+.result {
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    margin-right: 10px;
+}
+
