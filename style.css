@@ -8,6 +8,7 @@ body {
     align-items: center;
     margin: 0;
     height: 100vh;
+    gap: 0px;
 }
 
 #container {
@@ -40,7 +41,7 @@ body {
 }
 
 .column4 > div{
-    background-color: goldenrod;
+    background-color: goldenrod !important;
     color: white;
 }
 
@@ -50,15 +51,49 @@ body {
 .column4 > div {
     min-width: 50px;
     min-height: 50px;
-    outline: 1px black solid;
+    border: 1px black solid;
+    background-color: rgb(33, 33, 30);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: filter 0.15s ease;
+    cursor: pointer;
+}
+
+.column1 > div:hover,
+.column2 > div:hover,
+.column3 > div:hover,
+.column4 > div:hover {
+    filter: brightness(1.2);
 }
 
 .clear {
-    background-color: gray;
-    outline: none !important;
+    background-color: gray !important;
+}
+
+#clear1 {
+    border-top: 1px solid black !important;
+    border-left: 1px solid black !important;
+    border-bottom: 1px solid black !important;
+    border-right: none !important;
+}
+
+#clear2 {
+    border-top: 1px solid black !important;
+    border-left: none !important;
+    border-bottom: 1px solid black !important;
+    border-right: none !important;
+}
+
+#clear3 {
+    border-top: 1px solid black !important;
+    border-left: none !important;
+    border-bottom: 1px solid black !important;
+    border-right: 1px solid black !important;
+}
+
+.buttons:has(.clear:hover) .clear {
+    filter: brightness(1.4);
 }
 
 .result {
@@ -66,5 +101,5 @@ body {
     justify-content: end;
     padding: 15px;
     margin-right: 10px;
+    border-bottom: 1px solid black;
 }
-
