@@ -1,23 +1,7 @@
-let n1;
-let n2;
-let op;
+// Result
+let result = document.querySelector('.result');
 
-function add (a, b) {
-    return a + b;
+// Function to update the result text
+function updateResult(text) {
+    result.textContent = text;
 }
-
-function subtract (a, b) {
-    return a - b;
-}
-
-function multiply (a, b) {
-    return a * b;
-}
-
-function divide (a, b) {
-    if (b === 0) {
-        return 'Error: Division by zero';
-    }
-    return a / b;
-}
-
