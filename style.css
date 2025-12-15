@@ -102,4 +102,6 @@ body {
     padding: 15px;
     margin-right: 10px;
     border-bottom: 1px solid black;
+    min-width: auto;
+    min-height: 18.560px;
 }
